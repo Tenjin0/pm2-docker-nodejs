@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  central:
+    build:
+      dockerfile: Dockerfile-dev
+      context: .
+    command: npm run dev
+    volumes:
+      - "./src:/app"
+      - "./package.json":/app/package.json
