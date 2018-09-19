@@ -11,9 +11,11 @@
   "author": "Patrice PETIT <patricepetit@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
     "@types/es6-shim": "^0.31.37",
     "@types/express": "^4.16.0",
-    "express": "^4.16.3",
     "typescript": "^3.0.1"
   }
 }
