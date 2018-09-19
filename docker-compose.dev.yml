@@ -1,10 +1,13 @@
 version: '3.6'
+
 services:
   central:
     build:
       dockerfile: Dockerfile-dev
       context: .
-    command: npm run dev
+    container_name: central_xiaomi_dev
+    command: "npm run dev"
     volumes:
-      - "./src:/app"
-      - "./package.json":/app/package.json
+      - ./src/lib:/app/lib
+      - ./package.json:/app/package.json
+      - ./ecosystem.config.js:/app/ecosystem.config.js
